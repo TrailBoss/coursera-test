@@ -9,7 +9,7 @@
 // the "speak" method and which you will expose to the global context
 // See Lecture 52, part 1
 // var byeSpeaker =
-var byeSpeaker = {};//Fake namespaces see 52.1 var helloSpeaker = to empty object
+var byeSpeaker = {};//Fake namespaces see 52.1 var byeSpeaker = to empty object
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
 var speakWord = "Good Bye";
 
@@ -19,6 +19,7 @@ var speakWord = "Good Bye";
 byeSpeaker.speak = function (name) {
   console.log(speakWord + " " + name);
 }
+window.byeSpeaker = byeSpeaker;
 })(window); //creating IIFE added }) and () to invoke (wjb)
 
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
