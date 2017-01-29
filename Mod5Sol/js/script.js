@@ -122,7 +122,7 @@ var homeHtmlToInsertIntoMainPage=insertProperty(homeHtml, "randomCategoryShortNa
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-insertHtml("#main-content", homeHtmlToInsertIntoMainPage); //value is defined on line 119
+insertHtml("#main-content",homeHtmlToInsertIntoMainPage); //value is defined on line 119
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
